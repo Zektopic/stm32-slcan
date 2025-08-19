@@ -19,6 +19,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y gcc-arm-none-eabi make
 
+      - name: Build libopencm3
+        run: make -C libopencm3
+
       - name: Build firmware
         run: make
 
